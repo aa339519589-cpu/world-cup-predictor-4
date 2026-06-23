@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏆 世界杯预测 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>🏆 2026 世界杯预测</h1>
+    <p class="subtitle">美加墨 · 48 队新纪元 · 数据驱动预测</p>
+  </div>
+  <nav>
+    <a href="#predict">🏅 预测</a>
+    <a href="#teams">⚽ 球队排名</a>
+    <a href="#chart">📊 夺冠概率</a>
+    <a href="#history">📜 历届冠军</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== 预测区 ===== -->
+  <section id="predict" class="card">
+    <h2>🏅 你的预测</h2>
+    <div class="predict-form">
+      <label for="teamSelect">选择你看好的冠军球队：</label>
+      <select id="teamSelect"></select>
+      <button id="predictBtn">🏆 提交预测</button>
+    </div>
+    <div id="predictResult" class="result-box hidden"></div>
+  </section>
+
+  <!-- ===== FIFA 排名 ===== -->
+  <section id="teams" class="card">
+    <h2>⚽ FIFA 最新排名 Top 20</h2>
+    <p class="note">数据来源：FIFA 世界排名（2025年4月更新）</p>
+    <div class="table-wrapper">
+      <table id="rankTable">
+        <thead>
+          <tr><th>#</th><th>球队</th><th>积分</th><th>近 5 场</th><th>状态</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== 夺冠概率图表 ===== -->
+  <section id="chart" class="card">
+    <h2>📊 夺冠概率预测（Top 8）</h2>
+    <div class="chart-container">
+      <canvas id="probChart"></canvas>
+    </div>
+  </section>
+
+  <!-- ===== 历届冠军 ===== -->
+  <section id="history" class="card">
+    <h2>📜 历届世界杯冠军</h2>
+    <div class="grid" id="historyGrid"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Made with ❤️ | 数据仅供参考，娱乐预测</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
